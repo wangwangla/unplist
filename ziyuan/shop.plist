@@ -414,10 +414,6 @@
         <dict>
             <key>format</key>
             <integer>3</integer>
-            <key>pixelFormat</key>
-            <string>RGBA8888</string>
-            <key>premultiplyAlpha</key>
-            <false/>
             <key>realTextureFileName</key>
             <string>shop.png</string>
             <key>size</key>

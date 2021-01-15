@@ -18,14 +18,7 @@ import javax.imageio.ImageIO;
  */
 public class Unplist extends Game {
     private String[] unplistName = {
-//            "game",
-//            "plist1",
-            "about",
-            "bamboo",
-            "cherryblossom",
-            "cn",
-            "default",
-            "splash"
+            "shop"
     };
     public static void main(String[] args) {
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
@@ -38,7 +31,6 @@ public class Unplist extends Game {
     @Override
     public void create() {
         for (String fileName : unplistName) {
-//            PlistAtlas plistAtlas = new PlistAtlas(Gdx.files.internal(fileName+".plist"));
             PlistAtlasOther plistAtlas = new PlistAtlasOther(Gdx.files.internal(fileName+".plist"));
             try {
                 File file = new File(fileName+"/");
@@ -53,7 +45,6 @@ public class Unplist extends Game {
                     int height = regionTemp.getRegionHeight();
                     String[] split = name.split("/");
                     String s = split[split.length - 1];
-
                     //最 核心的一句
                     ImageIO.write(image.getSubimage(x, y, width, height),
                             "png", new FileOutputStream(fileName+"/" + s + ".png"));
