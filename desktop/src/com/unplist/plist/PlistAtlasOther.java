@@ -68,19 +68,39 @@ public class PlistAtlasOther implements Disposable {
 
 					XmlReader.Element value = childs.getChild(i + 1);
 
+					/** ***********************************
+					 * 尝试
+					 **************************************/
+
+					int childCount = value.getChildCount();
+					for (int i1 = 0; i1 < childCount; i1++) {
+						if (value != null&&value.getChild(i1).equals("textureRect")){
+							i1++;
+							String textOne = value.getChild(i1).getText();
+						}else if (value!=null&&value.getChild(i1).equals("textureRotated")){
+							i1++;
+							String textTwo = value.getChild(i1).getText();
+						}else if (value != null && value.getChild(i1).equals("spriteSourceSize")){
+							i1++;
+							String spriteSourceSize = value.getChild(i1).getText();
+						}
+					}
+
+					/** ***********************************
+					 * 尝试
+					 **************************************/
 					String text1 = value.getChild(9).getText();
-					String text2 = value.getChild(3).getText();
 					String text3 = value.getChild(11).getName();
 					String text4 = value.getChild(7).getText();
 
 
 					String[] points=text1.replace("{","").replace("}","").split(",");
-					int left=Integer.parseInt(points[0]);
-					int top=Integer.parseInt(points[1]);
-					int width=Integer.parseInt(points[2]);
-					int height=Integer.parseInt(points[3]);
-
-					String[] offsets=text2.replace("{","").replace("}","").split(",");
+//					if (points.length==4) {
+						int left = Integer.parseInt(points[0]);
+						int top = Integer.parseInt(points[1]);
+						int width = Integer.parseInt(points[2]);
+						int height = Integer.parseInt(points[3]);
+//					}
 					int offleft=0;
 					int offdown=0;
 
