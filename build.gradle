@@ -2,6 +2,23 @@ buildscript {
     
 
     repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/central'
+            name 'central'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/jcenter'
+            name 'jcenter'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+            name 'Google'
+        }
+
+        maven { url 'http://deltadna.bintray.com/android' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+
         mavenLocal()
         mavenCentral()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
@@ -30,6 +47,23 @@ allprojects {
     }
 
     repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/central'
+            name 'central'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/jcenter'
+            name 'jcenter'
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+            name 'Google'
+        }
+
+        maven { url 'http://deltadna.bintray.com/android' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+
         mavenLocal()
         mavenCentral()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }

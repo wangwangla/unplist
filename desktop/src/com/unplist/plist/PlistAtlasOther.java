@@ -72,25 +72,25 @@ public class PlistAtlasOther implements Disposable {
 					 * 尝试
 					 **************************************/
 
-					int childCount = value.getChildCount();
-					for (int i1 = 0; i1 < childCount; i1++) {
-						if (value != null&&value.getChild(i1).equals("textureRect")){
-							i1++;
-							String textOne = value.getChild(i1).getText();
-						}else if (value!=null&&value.getChild(i1).equals("textureRotated")){
-							i1++;
-							String textTwo = value.getChild(i1).getText();
-						}else if (value != null && value.getChild(i1).equals("spriteSourceSize")){
-							i1++;
-							String spriteSourceSize = value.getChild(i1).getText();
-						}
-					}
+//					int childCount = value.getChildCount();
+//					for (int i1 = 0; i1 < childCount; i1++) {
+//						if (value != null&&value.getChild(i1).equals("textureRect")){
+//							i1++;
+//							String textOne = value.getChild(i1).getText();
+//						}else if (value!=null&&value.getChild(i1).equals("textureRotated")){
+//							i1++;
+//							String textTwo = value.getChild(i1).getText();
+//						}else if (value != null && value.getChild(i1).equals("spriteSourceSize")){
+//							i1++;
+//							String spriteSourceSize = value.getChild(i1).getText();
+//						}
+//					}
 
 					/** ***********************************
 					 * 尝试
 					 **************************************/
-					String text1 = value.getChild(9).getText();
-					String text3 = value.getChild(11).getName();
+					String text1 = value.getChild(1).getText();
+					String text3 = value.getChild(5).getName();
 					String text4 = value.getChild(7).getText();
 
 

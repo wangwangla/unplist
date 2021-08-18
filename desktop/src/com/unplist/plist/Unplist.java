@@ -18,7 +18,7 @@ import javax.imageio.ImageIO;
  */
 public class Unplist extends Game {
     private String[] unplistName = {
-            "main"
+            "plist/block"
     };
     public static void main(String[] args) {
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
