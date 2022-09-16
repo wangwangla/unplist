@@ -24,34 +24,17 @@ public class UnTexturepacker extends Game {
 
     @Override
     public void create() {
-        String arr[] = {"country"};
+        String arr[] = {"jiangbei"};
         for (int i = 0; i < arr.length; i++) {
             String path = "atlas/" + arr[i];
 
             File file = new File("atlas/"+arr[i]+"/");
             file.mkdir();
 
-            FileHandle handle = Gdx.files.internal(path+".atlas");
-            TextureAtlas atlas = new TextureAtlas(handle);
-            BufferedImage image = null;
-            try {
-                image = ImageIO.read(Gdx.files.internal(path+".png").read());
-                for (TextureAtlas.AtlasRegion region : atlas.getRegions()) {
-                    String name = region.name;
-                    TextureRegion regionTemp = new TextureRegion(region);
-                    int x = regionTemp.getRegionX();
-                    int y = regionTemp.getRegionY();
-                    int width = regionTemp.getRegionWidth();
-                    int height = regionTemp.getRegionHeight();
-                    String[] split = name.split("/");
-                    String s = split[split.length - 1];
-                    //最 核心的一句
-                    ImageIO.write(image.getSubimage(x, y, width, height),
-                            "png", new FileOutputStream("atlas/"+arr[i]+"/" + s + ".png"));
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            FileHandle packFile = Gdx.files.internal(path+".atlas");
+            TextureAtlas.TextureAtlasData textureAtlasData = new TextureAtlas.TextureAtlasData(packFile, packFile.parent(), false);
+            Untext untext = new Untext();
+            untext.splitAtlas(textureAtlasData,"out/");
         }
         System.out.println("全部结束");
     }

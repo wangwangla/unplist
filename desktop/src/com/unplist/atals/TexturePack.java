@@ -6,7 +6,7 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 
 public class TexturePack {
 
-    static String[] atlasFileName = {"brick"};
+    static String[] atlasFileName = {"jiangbei"};
 
     private static void texturePack() {
 //        pre();
@@ -36,12 +36,17 @@ public class TexturePack {
             try {
                 TexturePacker.process(
                         setting,
-                        "../../Assets/" + input + "/",
+                        "xxxx/",
                         "image/" ,
                         input);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void main(String[] args) {
+        TexturePack texturePack = new TexturePack();
+        texturePack.texturePack();
     }
 }
