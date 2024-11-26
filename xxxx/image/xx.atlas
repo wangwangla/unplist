@@ -1,0 +1,146 @@
+
+xx.png
+size: 1622,249
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Baloo2-SemiBold_26_1
+  rotate: false
+  xy: 988, 43
+  size: 141, 48
+  orig: 256, 64
+  offset: 7, 9
+  index: -1
+add
+  rotate: false
+  xy: 1511, 45
+  size: 45, 44
+  orig: 45, 44
+  offset: 0, 0
+  index: -1
+boss
+  rotate: false
+  xy: 1457, 25
+  size: 46, 49
+  orig: 46, 49
+  offset: 0, 0
+  index: -1
+button
+  rotate: false
+  xy: 732, 99
+  size: 323, 146
+  orig: 323, 146
+  offset: 0, 0
+  index: -1
+buttonBoss
+  rotate: false
+  xy: 1063, 99
+  size: 323, 146
+  orig: 323, 146
+  offset: 0, 0
+  index: -1
+cloud
+  rotate: false
+  xy: 4, 8
+  size: 720, 237
+  orig: 720, 237
+  offset: 0, 0
+  index: -1
+di
+  rotate: false
+  xy: 1394, 82
+  size: 97, 88
+  orig: 97, 88
+  offset: 0, 0
+  index: -1
+goldImg
+  rotate: false
+  xy: 1386, 9
+  size: 63, 65
+  orig: 63, 65
+  offset: 0, 0
+  index: -1
+goldTop
+  rotate: false
+  xy: 732, 26
+  size: 248, 65
+  orig: 248, 65
+  offset: 0, 0
+  index: -1
+hong
+  rotate: false
+  xy: 1499, 97
+  size: 79, 73
+  orig: 79, 73
+  offset: 0, 0
+  index: -1
+hui
+  rotate: false
+  xy: 1137, 18
+  size: 79, 73
+  orig: 79, 73
+  offset: 0, 0
+  index: -1
+setting
+  rotate: false
+  xy: 1311, 25
+  size: 67, 66
+  orig: 67, 66
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 1394, 178
+  size: 220, 67
+  orig: 220, 67
+  offset: 0, 0
+  index: -1
+startAn1
+  rotate: false
+  xy: 1511, 4
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+startAn2
+  rotate: false
+  xy: 988, 5
+  size: 31, 30
+  orig: 31, 30
+  offset: 0, 0
+  index: -1
+startAn3
+  rotate: false
+  xy: 1586, 137
+  size: 32, 33
+  orig: 32, 33
+  offset: 0, 0
+  index: -1
+startLiang1
+  rotate: false
+  xy: 1550, 4
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+startLiang2
+  rotate: false
+  xy: 1027, 5
+  size: 31, 30
+  orig: 31, 30
+  offset: 0, 0
+  index: -1
+startLiang3
+  rotate: false
+  xy: 1586, 96
+  size: 32, 33
+  orig: 32, 33
+  offset: 0, 0
+  index: -1
+zi
+  rotate: false
+  xy: 1224, 19
+  size: 79, 72
+  orig: 79, 72
+  offset: 0, 0
+  index: -1

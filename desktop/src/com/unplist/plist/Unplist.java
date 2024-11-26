@@ -18,7 +18,11 @@ import javax.imageio.ImageIO;
  */
 public class Unplist extends Game {
     private String[] unplistName = {
-            "plist/block"
+            "plist/gameplist",
+            "plist/loadingplist",
+            "plist/noads",
+            "plist/otherplist",
+            "plist/unload",
     };
     public static void main(String[] args) {
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
@@ -31,7 +35,7 @@ public class Unplist extends Game {
     @Override
     public void create() {
         for (String fileName : unplistName) {
-            PlistAtlasOther plistAtlas = new PlistAtlasOther(Gdx.files.internal(fileName+".plist"));
+            PlistAtlasOtherDemo plistAtlas = new PlistAtlasOtherDemo(Gdx.files.internal(fileName+".plist"));
             try {
                 File file = new File(fileName+"/");
                 file.mkdir();
@@ -45,9 +49,17 @@ public class Unplist extends Game {
                     int height = regionTemp.getRegionHeight();
                     String[] split = name.split("/");
                     String s = split[split.length - 1];
+                    StringBuilder builder = new StringBuilder();
+                    for (int i = 0; i < split.length-1; i++) {
+                        builder.append(split[i]+"/");
+                    }
+                    File file1 = new File(fileName+"/"+builder.toString());
+                    if (!file1.exists()) {
+                        file1.mkdirs();
+                    }
                     //最 核心的一句
                     ImageIO.write(image.getSubimage(x, y, width, height),
-                            "png", new FileOutputStream(fileName+"/" + s + ".png"));
+                            "png", new FileOutputStream(fileName+"/" + name + ".png"));
                 }
             } catch (Exception e) {
                 e.printStackTrace();

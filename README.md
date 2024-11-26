@@ -1,5 +1,6 @@
-"# unplist" 
+# unplist
 
+包含了拆图片，合图片，plist转atlas.
 
 使用方法，将资源放入资源目录下，执行unplist   main函数
 
