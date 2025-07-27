@@ -1,0 +1,14 @@
+button.png
+size:477,68
+filter:Linear,Linear
+pma:true
+bar_home_black_2
+bounds:2,2,224,64
+button_switch_1
+bounds:365,8,54,58
+button_switch_2
+bounds:421,9,54,57
+off
+bounds:228,38,135,28
+on
+bounds:228,8,125,28

@@ -1,15 +1,13 @@
-package com.unplist.atals;
+package com.unplist.newAtlas;
+
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
-import java.awt.image.BufferedImage;
-import java.io.*;
-import javax.imageio.ImageIO;
+import java.io.File;
+
 /**
  *
  */
@@ -24,7 +22,7 @@ public class UnTexturepacker extends Game {
 
     @Override
     public void create() {
-        String arr[] = {"tb"};
+        String arr[] = {"down"};
         for (int i = 0; i < arr.length; i++) {
             String path = "atlas/" + arr[i];
 

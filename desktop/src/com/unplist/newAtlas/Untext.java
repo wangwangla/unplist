@@ -1,18 +1,13 @@
-package com.unplist.atals;
+package com.unplist.newAtlas;
 
-import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData.Page;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.TextureAtlasData.Region;
-
-import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class Untext {
     private static final String OUTPUT_TYPE = "png";
@@ -62,7 +57,7 @@ public class Untext {
             } catch (IOException e) {
                 printExceptionAndExit(e);
             }
-            for (Region region : atlas.getRegions()) {
+            for (TextureAtlas.TextureAtlasData.Region region : atlas.getRegions()) {
                 System.out.println(String.format("Processing image for %s: x[%s] y[%s] w[%s] h[%s], rotate[%s]", region.name,
                         region.left, region.top, region.width, region.height, region.rotate));
 
@@ -108,7 +103,7 @@ public class Untext {
      * @param outputDirFile The output directory
      * @param padding padding (in pixels) to apply to the image
      * @return The extracted image */
-    private BufferedImage extractImage (BufferedImage page, Region region, File outputDirFile, int padding) {
+    private BufferedImage extractImage (BufferedImage page, TextureAtlas.TextureAtlasData.Region region, File outputDirFile, int padding) {
         BufferedImage splitImage = null;
 
         // get the needed part of the page and rotate if needed
